@@ -8,15 +8,15 @@ const Cars = EmberObject.extend({
     model: null,
     year: null,
 
-    getCarDetails(){
+    getCarDetails() {
         return `${this.get('brand')} ${this.get('model')} (${this.get('year')})`;
     }
 });
 
 let car1 = Cars.create({
-    brand : 'Toyota',
-    model : 'Camry',
-    year : 2024,
+    brand: 'Toyota',
+    model: 'Camry',
+    year: 2024,
 });
 
 console.log(car1.getCarDetails());

@@ -13,5 +13,5 @@ const User = EmberObject.extend({
 
 let user = User.create();
 
-user.set('isPremiumUser', true); 
-user.set('isPremiumUser', false); 
+user.toggleProperty('isPremiumUser');
+user.toggleProperty('isPremiumUser'); 
